@@ -68,6 +68,17 @@ python DGM_outer.py
 ```
 By default, outputs will be saved in the `output_dgm/` directory.
 
+## Running the ImpacterAI Genesis Machine
+The `sales_agent.py` script showcases how DGM can be adapted for relationship
+building tasks focused on sales. A small set of example tasks is provided in
+`sales_tasks.json`.
+
+```bash
+python sales_agent.py --git_dir /path/to/repo --base_commit HEAD
+```
+The agent iterates over each task and produces suggestions for strengthening
+client relationships.
+
 ## File Structure
 - `analysis/` scripts used for plotting and analysis
 - `initial/` SWE-bench logs and performance of the initial agent
