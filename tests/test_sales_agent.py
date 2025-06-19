@@ -3,7 +3,7 @@ import importlib.util
 from pathlib import Path
 from unittest import mock
 
-MODULE_DIR = Path(__file__).resolve().parent.parent / "ImpacterAI Genesis Machine"
+MODULE_DIR = Path(__file__).resolve().parent.parent / "ImpacterAI"
 spec = importlib.util.spec_from_file_location("sales_agent", MODULE_DIR / "sales_agent.py")
 sales_agent = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(sales_agent)
